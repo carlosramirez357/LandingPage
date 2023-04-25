@@ -1,0 +1,189 @@
+.container {
+  display: flex;
+}
+
+.rectangle-1 {
+  width: 100%;
+  height: 100vh;
+  background: url(https://wallpapercave.com/wp/FQBnqzH.jpg) #5200ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-1 {
+  color: #fff;
+  width: 423px;
+  text-align: right;
+  font-size: 64px;
+  font-family: "Bebas Neue", cursive;
+}
+
+.text-2 {
+  width: 423px;
+  height: 90px;
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  text-align: right;
+  color: #fff;
+}
+
+.rectangle-2 {
+  width: 100%;
+  height: 100vh;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form label {
+  font-family: "Poppins", sans-serif;
+}
+
+.form input {
+  width: 100%;
+  height: 65px;
+  margin: 25px 0;
+  box-sizing: border-box;
+  background: #ededed;
+  border: 1px solid #c7c7c7;
+}
+
+.name {
+  width: 100%;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #000;
+}
+
+.email {
+  width: 100%;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #000;
+}
+
+.form button {
+  width: 187px;
+  height: 63px;
+  background: #000;
+  margin-top: 50px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: center;
+  align-self: self-start;
+  color: #fff;
+}
+
+@media (max-width: 1259px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .rectangle-1 {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .rectangle-2 {
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+  }
+
+  .text-1,
+  .text-2 {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .form {
+    width: 75%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+  }
+
+  .name {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .email {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 769px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .rectangle-1 {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .rectangle-2 {
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+  }
+
+  .text-1,
+  .text-2 {
+    justify-content: center;
+  }
+
+  .form {
+    width: 80%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+  }
+
+  .name {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .email {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form button {
+    width: 100%;
+  }
+}
